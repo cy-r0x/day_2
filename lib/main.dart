@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 void main() {
   runApp(App());
@@ -20,30 +19,32 @@ class App extends StatelessWidget {
             fontSize: 20,
           ),
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.star,
-              size: 50,
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-            ),
-            Icon(
-              Icons.star_outline,
-              size: 50,
-            ),
-          ],
+        body: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Rating",
+                style: TextStyle(
+                  fontSize: 30,
+                ),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(
+                    100,
+                    (index) => Icon(
+                      Icons.star,
+                      size: 1.00 * index + 1,
+                      color: Colors.cyan,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
