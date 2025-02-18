@@ -21,33 +21,27 @@ class App extends StatelessWidget {
           ),
         ),
         body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.ac_unit,
+              Icons.star,
               size: 50,
-              color: Colors.blueGrey,
             ),
-            Text(
-              "Hi",
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
             ),
-            Text(
-              "This is",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
             ),
-            Text(
-              "Flutter",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 30,
-              ),
+            Icon(
+              Icons.star,
+              size: 50,
+            ),
+            Icon(
+              Icons.star_outline,
+              size: 50,
             ),
           ],
         ),
