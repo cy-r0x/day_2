@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 void main() {
   runApp(App());
@@ -22,6 +23,11 @@ class App extends StatelessWidget {
         body: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            Icon(
+              Icons.ac_unit,
+              size: 50,
+              color: Colors.blueGrey,
+            ),
             Text(
               "Hi",
               style: TextStyle(
